@@ -5,6 +5,6 @@ package org.romainlavabre.database;
  */
 public interface LockType {
     Integer PESSIMISTIC_READ  = 4;
-
     Integer PESSIMISTIC_WRITE = 5;
+    Integer OPTIMISTIC        = 1;
 }

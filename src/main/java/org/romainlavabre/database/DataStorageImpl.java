@@ -17,8 +17,9 @@ import java.util.Map;
 public class DataStorageImpl implements DataStorageHandler {
 
     protected static final Map< Integer, LockModeType > LOCK_TYPE = Map.of(
-            4, LockModeType.PESSIMISTIC_READ,
-            5, LockModeType.PESSIMISTIC_WRITE
+            LockType.PESSIMISTIC_READ, LockModeType.PESSIMISTIC_READ,
+            LockType.PESSIMISTIC_WRITE, LockModeType.PESSIMISTIC_WRITE,
+            LockType.OPTIMISTIC, LockModeType.OPTIMISTIC
     );
     protected final        EntityManager                entityManager;
     protected final        EventDispatcher              eventDispatcher;
