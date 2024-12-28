@@ -63,4 +63,9 @@ public class StampManagedEntity {
             iteratorRemovedEntities.remove();
         }
     }
+
+    public void reset(){
+        persistedEntities.clear();
+        removedEntities.clear();
+    }
 }

@@ -1,2 +1,3 @@
+2.2.0: ADD StampManagedEntity.reset method
 2.1.0: ADD Optimistic lock
 2.0.0: fairfair-cloud/roadmap#16
